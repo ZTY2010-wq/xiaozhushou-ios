@@ -1,0 +1,15 @@
+# Xcode / xcodegen 产物
+build/
+out/
+*.xcodeproj
+*.xcworkspace
+DerivedData/
+xcuserdata/
+*.xcarchive
+
+# macOS
+.DS_Store
+
+# 自签后的临时文件
+Payload/
+*.mobileprovision

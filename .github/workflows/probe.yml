@@ -1,0 +1,14 @@
+name: probe
+on:
+  workflow_dispatch:
+jobs:
+  ubuntu-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: uname -a
+      - run: echo UBUNTU_OK
+  macos-probe:
+    runs-on: macos-14
+    steps:
+      - run: sw_vers
+      - run: echo MACOS_OK
